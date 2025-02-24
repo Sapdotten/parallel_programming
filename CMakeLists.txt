@@ -4,4 +4,7 @@ project(App LANGUAGES CXX)
 
 add_executable(App
         src/main.cpp
+        src/matrix.cpp
+        include/matrix.h
 )
+
