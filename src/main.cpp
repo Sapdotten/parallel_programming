@@ -37,14 +37,14 @@ int main() {
     createDirectoryIfNotExists(data_folder + "/" + matrix_folder);
 
     matrix_folder = data_folder + "/" + matrix_folder;
-    int test_count = 100;
+    int test_count = 10;
 
-    for (int n = 10, test = 1; n <= 100; n += 10, test++) {
+    for (int n = 100, test = 1; n <= 1000; n += 100, test++) {
         std::string test_folder = matrix_folder + "/test_" + std::to_string(test);
         std::filesystem::create_directory(test_folder);
 
         long long int sum = 0;
-
+        std::cout <<"Test "<<n<<"-size matrix"<<std::endl;
         for (int i = 0; i < test_count; i++) {
             Matrix A(n, n, true);
             Matrix B(n, n, true);
