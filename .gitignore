@@ -34,3 +34,4 @@
 # Idea
 .idea/
 cmake-build-debug/
+venv/
